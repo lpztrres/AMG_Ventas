@@ -13,7 +13,7 @@ namespace Sales.API.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<Country>().HasIndex(c => c.Name).IsUnique();
+            modelBuilder.Entity<Country>().HasIndex(e => e.Name).IsUnique();
         }
     }
 }
